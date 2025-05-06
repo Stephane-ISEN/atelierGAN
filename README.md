@@ -88,6 +88,7 @@ git commit -m "Ajout de la fonctionnalité login"
 GitHub est une plateforme en ligne pour héberger tes dépôts Git.
 Il permet de **partager ton code**, **collaborer à plusieurs** et **gérer les issues/pull requests**.
 
+![logo Github](ressources/github-logo.png)
 ---
 
 ## Relier un dépôt distant sur GitHub
