@@ -1,0 +1,29 @@
+name: Run tests API-GAN
+
+on:
+  push:
+    branches:
+      - '**'  # Déclenche le workflow sur toutes les branches
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # Utilise une machine virtuelle Ubuntu pour exécuter le job
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3  # Clone le dépôt sur la machine GitHub
+
+      - name: Set up Python
+        uses: actions/setup-python@v4  # Installe Python sur la machine
+        with:
+          python-version: '3.12'  # Version spécifique de Python
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  # Installe les dépendances du projet
+
+      - name: Run tests
+        run: |
+          cd app
+          pytest  # Exécute les tests avec pytest dans le dossier app

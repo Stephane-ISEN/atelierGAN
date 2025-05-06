@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  web:
+    build:
+      context: .  # Chemin vers le répertoire contenant le Dockerfile
+      dockerfile: Dockerfile  # Facultatif si le fichier s'appelle Dockerfile
+    container_name: api_gan
+    ports:
+      - "8081:80"  # Redirige le port 8000 de l'hôte vers le port 80 du conteneur
+    volumes:
+      - ./app:/code/app  # Montage pour recharger automatiquement le code (optionnel)
+      - ./requirements.txt:/code/requirements.txt  # Montage pour recharger automatiquement les dépendances (optionnel)
+      - ./images:/code/images
+    environment:
+      - PYTHONUNBUFFERED=1  # Assure que les logs apparaissent immédiatement dans la console
+    working_dir: /code/app   # 👈 change de répertoire
+    command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
