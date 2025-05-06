@@ -1,4 +1,4 @@
-# Atelier GAN - Les Test automaitques
+# Atelier GAN - Les tests automatiques
 
 Les tests automatiques permettent de vérifier en continu que le code fonctionne comme attendu, sans intervention manuelle.
 Ils sont essentiels pour détecter rapidement des régressions, valider des évolutions et garantir la stabilité d’un projet, en particulier lorsqu’il implique plusieurs contributeurs.
