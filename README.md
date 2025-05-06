@@ -2,6 +2,7 @@
 
 Les tests unitaires sont devenus essentiels dans le développement logiciel moderne pour garantir la qualité, la stabilité et l’évolutivité des projets. Ce tutoriel présente, étape par étape, comment mettre en place et exécuter des tests unitaires sur une API FastAPI à l’aide de `pytest`, en expliquant les concepts clés, les bonnes pratiques et en proposant un exercice pratique pour s’entraîner.
 
+![PyTest](ressources/pytest1.webp)
 
 ## 1. Explication et utilité des tests unitaires
 
