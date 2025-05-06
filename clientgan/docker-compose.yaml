@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  gan-client:
+    build: .
+    container_name: client_gan
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+    command: ["python", "main.py"]
