@@ -132,7 +132,7 @@ async def generate_image():
 **Lancer le serveur :**
 
 ```bash
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8081
+uvicorn main:app --reload --host 0.0.0.0 --port 8081
 ```
 
 **Tester l’API dans le navigateur :**
