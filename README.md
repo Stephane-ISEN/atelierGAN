@@ -214,6 +214,7 @@ jobs:
 
 En cas d’échec, le workflow apparaît en rouge, et GitHub peut même afficher un résumé directement dans les pull requests, permettant aux équipes de réagir avant de fusionner le code.
 
+![résultats des tests automatiques](ressources/test_auto.png)
 ---
 
 ## Pour aller plus loin
